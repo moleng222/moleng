@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>万圣节抽符</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta charset="utf-8">
+	<script>
+			function fanye(num){
+				document.getElementById("page1").style.display="none";
+				document.getElementById("page2").style.display="none";
+				document.getElementById("page3").style.display="none";
+				document.getElementById("page4").style.display="none";
+				if(num==1){
+					document.getElementById("page1").style.display="block";
+				}else if(num==2){
+					document.getElementById("page2").style.display="block";
+				}else if(num==3){
+					document.getElementById("page3").style.display="block";
+				}else if(num==4)
+					document.getElementById("page4").style.display="block";
+			}
+			function chou(num){
+				fanye(4);
+				if(num==1){
+					document.getElementById("page4").style.backgroundImage="url(img/charm1.jpg)";
+				}else if(num==2){
+					document.getElementById("page4").style.backgroundImage="url(img/charm2.jpg)";
+				}else if(num==3){
+					document.getElementById("page4").style.backgroundImage="url(img/charm3.jpg)";
+				}else if(num==4){
+					document.getElementById("page4").style.backgroundImage="url(img/charm4.jpg)";
+				}else if(num==5){
+					document.getElementById("page4").style.backgroundImage="url(img/charm5.jpg)";
+				}else if(num==6){
+					document.getElementById("page4").style.backgroundImage="url(img/charm7.jpg)";
+				}else if(num==7){
+					document.getElementById("page4").style.backgroundImage="url(img/charm7.jpg)";
+				}
+			}
+		</script>
+</head>
+<body>
+	
+	<div id="page1">
+		<img id="title" src="img/title.png">
+		<img id="box" src="img/box.png" onclick="fanye(2)">
+	</div>	
+	<div id="page2">
+		<img id="pumpkin" src="img/pumpkin.png">
+		<img id="startGame" src="img/startGame.jpg" onclick="fanye(3)">
+	</div>	
+	<div id="page3">
+		<img id="charm01" src="img/1.png" onclick="chou(1)">
+		<img id="charm02" src="img/2.png" onclick="chou(2)">
+		<img id="charm03" src="img/3.png" onclick="chou(3)">
+		<img id="charm04" src="img/4.png" onclick="chou(4)">
+		<img id="charm05" src="img/5.png" onclick="chou(5)">
+		<img id="charm06" src="img/6.png" onclick="chou(6)">
+		<img id="charm07" src="img/7.png" onclick="chou(7)">
+	</div>	
+	<div id="page4">
+		<img id="back" src="./img/back.png" onclick="fanye(3)">
+		<img id="follow" src="img/follow.png" >
+		<p>@baiyiming 2020 </p>
+	</div>
+</body>
+</html>

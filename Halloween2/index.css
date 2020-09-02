@@ -1,0 +1,345 @@
+html
+{
+	width: 100%;
+	height: 100%;
+}
+body
+{
+	width: 100%;
+	height: 100%;
+}
+div
+{
+	width: 100%;
+	height: 100%;
+}
+
+#page1
+{
+	background-image: url(img/halloween1.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	
+}
+#page2
+{
+	background-image: url(img/halloween2.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	display: none;
+}
+#page3
+{
+	background-image: url(img/halloweenMain.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	display: none;
+}
+#page4
+{
+
+	background-repeat: no-repeat;
+	background-size:cover;
+	display: none;
+}
+#title
+{
+	position: fixed;
+	left: 340px;
+	top: 80px;
+	animation: move01 5s infinite;
+}
+#box
+{
+	position: fixed;
+	left: 315px;
+	top: 1020px;
+	animation: move02 1s infinite;
+}
+#pumpkin
+{
+	position: fixed;
+	left: 280px;
+	top: 50px;
+}
+#startGame
+{
+	position: fixed;
+	left: 380px;
+	bottom: 250px;
+}
+#charm01
+{
+	position: fixed;
+	left: 90px;
+	top: 190px;
+	animation: movecharm01 13s infinite;
+}
+#charm02
+{
+	position: fixed;
+	left: 250px;
+	top: 490px;
+	animation: movecharm02 15s infinite;
+}
+
+#charm03
+{
+	position: fixed;
+	left: 155px;
+	top: 1000px;
+	animation: movecharm03 15s infinite;
+}
+#charm04
+{
+	position: fixed;
+	left: 500px;
+	top: 340px;
+	animation: movecharm04 14s infinite;
+}
+#charm05
+{
+	position: fixed;
+	left: 695px;
+	top: 695px;
+	animation: movecharm05 12s infinite;
+}
+#charm06
+{
+	position: fixed;
+	left: 470px;
+	top: 880px;
+	animation: movecharm06 13s infinite;
+}
+#charm07
+{
+	position: fixed;
+	left: 800px;
+	top: 1280px;
+	animation: movecharm07 12s infinite;
+}
+#back
+{
+	position: fixed;
+	left: 50px;
+	top: 50px;
+}
+#follow
+{
+	position: fixed;
+	left: 400px;
+	top: 1650px;
+}
+
+#page4>p
+{
+	font-size: 20px;
+	text-align:right;
+	font-weight: bold;
+	color: yellow;
+	position: absolute; bottom: 10px; right: 10px;
+}
+@keyframes	move01
+{
+	0%{
+		opacity:0;
+	}
+
+	50%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+	}
+
+}
+@keyframes	move02
+{
+	0%{
+		left: 315px;
+		top: 1020px;
+	}
+	5%{
+		left: 295px;
+		top: 1000px;
+	}
+	10%{
+		left: 335px;
+		top: 1040px;
+	}
+	15%{
+		left: 295px;
+		top: 1000px;
+	}
+	20%{
+		left: 335px;
+		top: 1040px;
+	}
+	100%{
+		left: 315px;
+		top: 1020px;
+	}
+}
+@keyframes movecharm01
+{
+	0%{
+		left: 90px;
+		top: 190px;
+	}
+	30%{
+		left: 90px;
+		top: 390px;
+	}
+	60%{
+		left: 190px;
+		top: 290px;
+	}
+	100%{
+		left: 90px;
+		top: 190px;
+	}
+}
+@keyframes movecharm02
+{
+	0%{
+		left: 250px;
+		top: 490px;
+	}
+	50%{
+		left: 450px;
+		top: 650px;
+	}
+	100%{
+		left: 250px;
+		top: 490px;
+	}
+}
+@keyframes movecharm03
+{
+	0%{
+		left: 155px;
+		top: 1000px;
+	}
+	10%{
+		left: 100px;
+		top: 1050px;
+	}
+	20%{
+		left: 210px;
+		top: 1100px;
+	}
+	30%{
+		left: 100px;
+		top: 1150px;
+	}
+	40%{
+		left: 210px;
+		top: 1200px;
+	}
+	50%{
+		left: 100px;
+		top: 1250px;
+	}
+	60%{
+		left: 210px;
+		top: 1200px;	
+	}
+	70%{
+		left: 100px;
+		top: 1150px;
+	}
+	80%{
+		left: 210px;
+		top: 1100px;		
+	}
+	90%{
+		left: 100px;
+		top: 1050px;
+	}
+	100%{
+		left: 155px;
+		top: 1000px;
+	}
+}
+@keyframes movecharm04
+{
+	0%{
+		left:500px;
+		top: 340px;
+	}
+	25%{
+		left: 810px;
+		top: 340px;
+	}
+	50%{
+		left: 810px;
+		top: 110px;
+	}
+	75%{
+		left: 500px;
+		top: 110px;
+	}
+	100%{
+		left: 500px;
+		top: 340px;
+	}
+
+}
+@keyframes movecharm05
+{
+	0%{
+		left: 695px;
+		top: 695px;
+	}
+	25%{
+		left: 800px;
+		top: 615px;
+	}
+	50%{
+		left: 720px;
+		top: 535px;
+	}
+	75%{
+		left: 620px;
+		top: 610px;
+	}
+	100%{
+		left: 695px;
+		top: 695px;
+	}
+
+}
+@keyframes movecharm06
+{
+	0%{
+		left: 470px;
+		top: 880px;
+		transform: rotateZ(0deg);
+	}
+	50%{
+		left: 470px;
+		top: 1500px;
+		transform: rotateZ(360deg);	}
+	100%{
+		left: 470px;
+		top: 880px;
+		transform: rotateZ(0deg);
+	}
+
+}
+@keyframes movecharm07
+{
+	0%{
+		transform: scale(1);
+		opacity:1;
+	}
+	50%{
+		transform: scale(0.1);
+		opacity:0;
+	}
+	100%{
+		transform: scale(1);
+		opacity:1;
+	}
+
+}
